@@ -1,0 +1,96 @@
+.consult{
+    height: 80vh;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background:url('../../../public/assets/Images/background-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    h1{
+        margin: 25px;
+        color: var(--dark-blue);
+    }
+
+    .consult-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .consult-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 25px;
+            padding: 20px;
+            background:#fff;
+            border:.1rem solid rgba(0,0,0,.1);
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+            .card-top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                
+
+                h3{
+                    color: var(--dark-blue);
+                    padding: 5px 0;
+                }
+                p{
+                    font-size: 14px;
+                    color: var(--dark-blue);
+                    margin-bottom: 10px;
+                }
+
+              
+                img{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    object-fit: cover ;
+                    background: var(--dark-blue);
+                }
+            }
+            .card-bottom {
+                border-top: .1rem solid rgba(0,0,0,.1);
+                padding: 10px;
+                display: flex;
+
+                span{
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: lightgray;
+                    border-radius: 50%;
+                    margin-right: 12px;
+                    cursor: pointer;
+                    transition: 0.3s;
+
+                    &:hover{
+                        background: var(--dark-blue);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .consult{
+        height: max-content !important;
+    }
+    .consult-container{
+        flex-direction: column;
+    }
+
+
+}

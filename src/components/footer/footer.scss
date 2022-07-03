@@ -1,0 +1,44 @@
+.footer{
+    background:url('../../../public/assets/Images/background-img.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .box-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        margin:25px;
+
+        p{
+            font-size: 13px;
+        }
+
+        h3{
+            color:var(--dark-blue);
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        a{
+            color:var(--dark-blue);
+            font-size: 13px;
+            margin: 5px 0;
+        }
+    }
+    h1{
+        text-align: center;
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .box-container{
+        flex-direction: column ;
+    }
+
+}
